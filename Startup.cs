@@ -29,9 +29,13 @@ namespace Tekus
         {
             services.AddDbContext<ApplicationDbContext>(options => options.UseInMemoryDatabase("tekus"));
 
-            services.AddDbContext<tekusContext>(options => {
+            services.AddDbContext<tekusContext>(options =>
+            {
                 options.UseSqlServer(Configuration.GetConnectionString("Tekus"));
             });
+
+
+            services.AddCors();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
@@ -47,6 +51,17 @@ namespace Tekus
             {
                 app.UseHsts();
             }
+
+
+
+            app.UseCors(builder => {
+                builder.AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowAnyOrigin()
+                .DisallowCredentials();
+                //.WithOrigins("http://localhost:4200");
+            });
+
 
             app.UseHttpsRedirection();
             app.UseMvc();

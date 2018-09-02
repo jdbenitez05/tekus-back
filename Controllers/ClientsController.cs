@@ -54,7 +54,8 @@ namespace Tekus.Controllers
                 _context.Clients.Add(Client);
                 _context.SaveChanges();
 
-                return new CreatedAtRouteResult("ClientCreated", new { id = Client.ClientId });
+                //return new CreatedAtRouteResult("ClientCreated", new { id = Client.ClientId });
+                return Ok(Client);
             }
 
             return BadRequest(ModelState);
@@ -80,8 +81,7 @@ namespace Tekus.Controllers
             _context.Entry(Client).State = EntityState.Modified;
             _context.SaveChanges();
 
-            return Ok();
-
+            return Ok(Client);
         }
 
         
