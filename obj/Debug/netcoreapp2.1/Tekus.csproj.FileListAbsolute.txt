@@ -1,0 +1,14 @@
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\bin\Debug\netcoreapp2.1\Tekus.deps.json
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\bin\Debug\netcoreapp2.1\Tekus.runtimeconfig.json
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\bin\Debug\netcoreapp2.1\Tekus.runtimeconfig.dev.json
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\bin\Debug\netcoreapp2.1\Tekus.dll
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\obj\Debug\netcoreapp2.1\Tekus.csproj.CoreCompileInputs.cache
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\obj\Debug\netcoreapp2.1\Tekus.RazorAssemblyInfo.cache
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\obj\Debug\netcoreapp2.1\Tekus.RazorAssemblyInfo.cs
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\obj\Debug\netcoreapp2.1\Tekus.AssemblyInfoInputs.cache
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\obj\Debug\netcoreapp2.1\Tekus.AssemblyInfo.cs
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\obj\Debug\netcoreapp2.1\Tekus.RazorTargetAssemblyInfo.cache
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\bin\Debug\netcoreapp2.1\Tekus.pdb
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\obj\Debug\netcoreapp2.1\Tekus.dll
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\obj\Debug\netcoreapp2.1\Tekus.pdb
+C:\Users\Juan Benitez\source\repos\Tekus\Tekus\obj\Debug\netcoreapp2.1\Tekus.csprojAssemblyReference.cache
