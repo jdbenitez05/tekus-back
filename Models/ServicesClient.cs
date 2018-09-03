@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Tekus.Models
 {
@@ -11,7 +12,10 @@ namespace Tekus.Models
         }
 
         public int ServiceClientId { get; set; }
+        [ForeignKey("Clients")]
         public int ClientId { get; set; }
+
+        [ForeignKey("Services")]
         public int ServiceId { get; set; }
         public DateTime TimeCreated { get; set; }
         public DateTime? TimeUpdated { get; set; }

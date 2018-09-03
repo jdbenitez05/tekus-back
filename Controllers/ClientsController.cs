@@ -71,6 +71,7 @@ namespace Tekus.Controllers
                 return BadRequest();
             }
 
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
