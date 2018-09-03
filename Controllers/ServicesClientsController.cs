@@ -24,7 +24,7 @@ namespace Tekus.Controllers
         [HttpGet]
         public IEnumerable<ServicesClient> GetServicesClient()
         {
-            return _context.ServicesClient.Include(x => x.Client).ToList();
+            return _context.ServicesClient.Include(x => x.Client).Include(x => x.Service).ToList();
         }
 
         // GET: api/ServicesClients/5

@@ -37,7 +37,7 @@ namespace Tekus
 
             services.AddCors();
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddJsonOptions(ConfigureJson);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,17 +66,11 @@ namespace Tekus
             app.UseHttpsRedirection();
             app.UseMvc();
 
-            //if (!contex.Paises.Any())
-            //{
-            //    contex.Paises.AddRange(new List<Pais>
-            //    {
-            //        new Pais() {Nombre = "República Dominicana"},
-            //        new Pais() {Nombre = "México"},
-            //        new Pais() {Nombre = "Argentina"}
-            //    });
+        }
 
-            //    contex.SaveChanges();
-            //}
+        private void ConfigureJson(MvcJsonOptions obj)
+        {
+            obj.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
         }
     }
 }
